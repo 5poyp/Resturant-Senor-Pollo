@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name "viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="HTML, Overflow, auto, scale">
+<meta name="author" content="Your Name">
+<meta name="description" content="How to use Overflow attribute in HTML/CSS">
+<meta http-equiv="refresh" content="2">
+  <title>Señor. Pollo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+  <style>
+    nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #DA7630;
+  color: black;
+  font-size: 20px;
+  font: serif;
+}
+
+.logo img {
+  height:90px;
+  margin-left: 30px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+display:block;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 15px;
+font-family: 'Raleway',sans-serif;
+letter-spacing: 2px;
+font-weight: 600;
+padding: 50px;
+}
+nav ul li a:hover{
+background-color:white;
+transition:all ease 2.5s;
+    color:black;
+  }
+
+ 
+.navigation-
+}
+nav ul li a:hover {
+  background-color:black;
+ 
+}
+
+.trailer-div{
+  background-color: #DA7630;
+  display: 'block';
+  margin: 8px;
+  padding: 20px;
+}
+
+iframe{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.trailer-div h3{
+  text-align: center;
+}
+
+ #buy{
+  position: relative;
+  z-index: 9;
+  transition: all ease 0.5s;
+  background-color: #DA7630;
+  height: 60px;
+  border-radius: 22.5px;
+  border: 0px;
+  margin: 5px auto;
+  display: block;
+  color: white;
+  font-weight: bolder;
+  padding: 0px 22.5px;
+  font-size: 18px;
+       
+        }
+  #buy:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: scale(1,1);
+        background-color: #DA7630;
+        border-radius: 100px;
+        opacity: .4;
+        z-index: -1;
+        transition: all ease 0.5s;
+        }
+       
+    #buy:hover:before{
+        animation: buyBefore 2s linear 0s infinite;
+        }
+    @keyframes buyBefore {
+        100%{
+            transform: scale(1.2);
+            opacity: 0;
+            }
+        }
+           
+    #buy:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: scale(1,1);
+        background-color: #DA7630;
+        border-radius: 100px;
+        opacity: .2;
+        z-index: -1;
+        transition: all ease 0.5s;
+        }
+       
+    #buy:hover:after{
+        animation: buyAfter 2s linear 0s infinite;
+        }
+    @keyframes buyAfter {
+        100%{
+            transform: scale(1.4);
+            opacity: 0;
+            }
+        }
+
+
+marquee {
+  display: block;
+  background-color: white;
+  color:black;
+  font-size: 30px;
+  font: serif;
+  height: 30px;
+  padding: 10px;
+
+}
+.events {
+  background-color: #DA7630;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.event-box {
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.event-box img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.event-box p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+    p{
+      font-family: 'Raleway',sans-serif;
+    }
+.subscribe {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.subscribe img {
+  width: 500px;
+  height: 600px;
+  margin-bottom: 20px;
+}
+
+.subscribe p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+   
+ #subscribe{
+  position: relative;
+  z-index: 9;
+  transition: all ease 0.5s;
+  background-color: #DA7630;
+  height: 100px;
+  border-radius: 30px;
+  border: 0px;
+  margin: 5px auto;
+  display: block;
+  color: white;
+  font-weight: bolder;
+  padding: 0px 40px;
+  font-size: 18px;
+       
+        }
+  #subscribe:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: scale(1,1);
+        background-color: #DA7630;
+        border-radius: 200px;
+        opacity: .4;
+        z-index: -1;
+        transition: all ease 0.5s;
+        }
+       
+    #subscribe:hover:before{
+        animation: buyBefore 2s linear 0s infinite;
+        }
+    @keyframes subscribeBefore {
+        100%{
+            transform: scale(1.2);
+            opacity: 0;
+            }
+        }
+           
+    #subscribe:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: scale(1,1);
+        background-color: #008e98;
+        border-radius: 100px;
+        opacity: .2;
+        z-index: -1;
+        transition: all ease 0.5s;
+        }
+       
+    #subscribe:hover:after{
+        animation: buyAfter 2s linear 0s infinite;
+        }
+    @keyframes subscribeAfter {
+        100%{
+            transform: scale(1.4);
+            opacity: 0;
+            }
+        }
+
+
+  </style>
+</head>
+<body>
+  <nav>
+   <div class="logo">
+      <img src="grandprixlogo.jpeg" alt="Logo">
+    </div>
+    <div class="nav-links">
+      <ul>
+		<li><a href="about.html">About</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+		<li><a href="Menu.html" id="buy">Buy Now</a></li>
+		</ul>
+		
+	</div>
+	
+  </nav>
+
+<marquee style="color: orange;" behavior="scroll" direction="right" scrollamount="6" ><b>DISCOUNT STARTING FROM JUNE 8TH TO JUNE 17TH!</b></marquee>
+
+  <div class='trailer-div'>
+    <center><a href="about.html"><img src="images/chicken.png" alt="chicken" height="150" width="200"></a></center>
+    <center><h1>Señor Pollo</h1></center>
+  </div>
+<div class="events">
+  <div class="event-box">
+    <a href="about.html"><img src="images/wings.jpg" alt="chicken" height="150" width="200"></a>
+    <p>What would you like to order?</p>
+<form>Name:<br> 
+
+<input type="text"> 
+
+<br><br> 
+
+I would like to order a:<br> 
+
+<input type="checkbox" value="Fried Chicken"> 
+
+Fried Chicken <br> 
+
+<input type="checkbox" value="Broiled Chicken Breast Meal"> 
+
+Broiled Chicken Breast Meal
+
+<br><br> 
+ 
+  </div>
+  <div class="event-box">
+    <a href="about.html"><img src="images/french fries.jfif" alt="french fries" height="150" width="200"></a>
+    <p>What are your sides?</p>
+<form>Name:
+
+<input type="text"> 
+
+<br><br>
+
+I would like to order a:
+
+<input type="checkbox" value="Mashed Potatoes"> 
+
+Mashed Potatoes 
+
+<input type="checkbox" value=" Green Beans"> 
+
+Green Beans
+
+
+<input type="checkbox" value="French Fries"> 
+
+French Fries 
+
+</div>
+</div>
+</div>
+</body>
+</html>
